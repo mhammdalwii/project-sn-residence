@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import PartnershipSection from "../../components/organisms/PartnershipSection";
 import AboutSection from "../../components/organisms/AboutSection";
 import WhySNResidenceSection from "../../components/organisms/WhySNResidenceSection";
+import SpecificationSection from "../../components/organisms/SpecificationSection";
 
 const Home: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
         <PartnershipSection />
         <AboutSection />
         <WhySNResidenceSection />
+        <SpecificationSection />
       </main>
     </>
   );
