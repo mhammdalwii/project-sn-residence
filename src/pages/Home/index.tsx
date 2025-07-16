@@ -7,6 +7,12 @@ import AboutSection from "../../components/organisms/AboutSection";
 import WhySNResidenceSection from "../../components/organisms/WhySNResidenceSection";
 import SpecificationSection from "../../components/organisms/SpecificationSection";
 import GallerySection from "../../components/organisms/GallerySection";
+import VideoPreviewSection from "../../components/organisms/VideoPreviewSection";
+import LocationSection from "../../components/organisms/LocationSection";
+import AngsuranSection from "../../components/organisms/AngsuranSection";
+import BookingSection from "../../components/organisms/BookingSection";
+import Footer from "../../components/organisms/FooterKontakSection";
+import FooterCopyright from "../../components/organisms/FooterCopyright";
 
 const Home: React.FC = () => {
   return (
@@ -23,6 +29,12 @@ const Home: React.FC = () => {
         <WhySNResidenceSection />
         <SpecificationSection />
         <GallerySection title={""} description={""} images={[]} />
+        <VideoPreviewSection />
+        <LocationSection />
+        <AngsuranSection />
+        <BookingSection />
+        <Footer />
+        <FooterCopyright />
       </main>
     </>
   );
