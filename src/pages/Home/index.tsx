@@ -6,6 +6,7 @@ import PartnershipSection from "../../components/organisms/PartnershipSection";
 import AboutSection from "../../components/organisms/AboutSection";
 import WhySNResidenceSection from "../../components/organisms/WhySNResidenceSection";
 import SpecificationSection from "../../components/organisms/SpecificationSection";
+import GallerySection from "../../components/organisms/GallerySection";
 
 const Home: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
         <AboutSection />
         <WhySNResidenceSection />
         <SpecificationSection />
+        <GallerySection title={""} description={""} images={[]} />
       </main>
     </>
   );
