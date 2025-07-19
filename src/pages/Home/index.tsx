@@ -13,6 +13,7 @@ import AngsuranSection from "../../components/organisms/AngsuranSection";
 import BookingSection from "../../components/organisms/BookingSection";
 import Footer from "../../components/organisms/FooterKontakSection";
 import FooterCopyright from "../../components/organisms/FooterCopyright";
+import WhatsAppButton from "../../components/atoms/WhatsAppButton";
 
 const Home: React.FC = () => {
   return (
@@ -35,6 +36,7 @@ const Home: React.FC = () => {
         <BookingSection />
         <Footer />
         <FooterCopyright />
+        <WhatsAppButton />
       </main>
     </>
   );
