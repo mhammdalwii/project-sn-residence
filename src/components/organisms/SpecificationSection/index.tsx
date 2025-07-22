@@ -1,6 +1,7 @@
 import React from "react";
 import SpecList from "../../molecules/SpecList";
 import specImage from "../../../assets/spec-image.png";
+import Divider from "../../atoms/Divider";
 
 const SpecificationSection: React.FC = () => {
   return (
@@ -14,8 +15,10 @@ const SpecificationSection: React.FC = () => {
         {/* Spesifikasi */}
         <div className="w-full md:w-1/2 space-y-6">
           {" "}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800">Spesifikasi</h2>
-          <div className="w-16 h-1 bg-orange-500 mt-2  " />
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 text-center">
+            Spesifikasi
+            <Divider />
+          </h2>
           <SpecList />
           <div className="mt-6 text-sm md:text-base text-gray-700 bg-orange-50 border-l-4 border-orange-500 p-4 rounded">
             <strong className="text-orange-600 block mb-1">KHUSUS PEMBELIAN UNIT TIPE 36/72:</strong>

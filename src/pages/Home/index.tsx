@@ -9,11 +9,13 @@ import SpecificationSection from "../../components/organisms/SpecificationSectio
 import GallerySection from "../../components/organisms/GallerySection";
 import VideoPreviewSection from "../../components/organisms/VideoPreviewSection";
 import LocationSection from "../../components/organisms/LocationSection";
-import AngsuranSection from "../../components/organisms/AngsuranSection";
+
 import BookingSection from "../../components/organisms/BookingSection";
 import Footer from "../../components/organisms/FooterKontakSection";
 import FooterCopyright from "../../components/organisms/FooterCopyright";
 import WhatsAppButton from "../../components/atoms/WhatsAppButton";
+import SitePlanSection from "../../components/organisms/SitePlanSection";
+import RequirementsSection from "../../components/organisms/AlurPembelianSection";
 
 const Home: React.FC = () => {
   return (
@@ -29,10 +31,11 @@ const Home: React.FC = () => {
         <AboutSection />
         <WhySNResidenceSection />
         <SpecificationSection />
+        <SitePlanSection />
         <GallerySection title={""} description={""} images={[]} />
         <VideoPreviewSection />
         <LocationSection />
-        <AngsuranSection />
+        <RequirementsSection />
         <BookingSection />
         <Footer />
         <FooterCopyright />

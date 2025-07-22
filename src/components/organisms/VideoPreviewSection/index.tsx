@@ -9,7 +9,7 @@ const previewData = {
   title: "Preview",
   description: "Rumah dengan spesifikasi subsidi ini bisa didapatkan dengan kpr subsidi. KPR Bersubsidi adalah Kredit pemilikan rumah yang mendapat bantuan kemudahan perolehan rumah bagi pemerintah berupa dana murah jangka panjang.",
   imageUrl: previewImage,
-  videoId: "_bcq8k-pWwI?si=8aU8UtqVX3FZzKa8", // Ganti dengan ID video YouTube
+  videoId: "rlFF8Mpc6j0?si=0ZVn8S06y_fLpaCg", // Ganti dengan ID video YouTube
 };
 
 const VideoPreviewSection: React.FC = () => {

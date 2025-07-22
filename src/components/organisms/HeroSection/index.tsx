@@ -5,7 +5,7 @@ import "swiper/swiper-bundle.css";
 
 import HeroContent from "../../molecules/HeroContent";
 import bg1 from "../../../assets/bg1.png";
-import bg2 from "../../../assets/hero-image.png";
+import bg2 from "../../../assets/bgTerbaru.jpg";
 
 const HeroSection: React.FC = () => {
   const images = [bg1, bg2];

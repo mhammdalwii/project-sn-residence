@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, A11y } from "swiper/modules";
 import galleryImage1 from "../../../assets/galleryImage1.png";
 import galleryImage2 from "../../../assets/bg3.png";
+import GalleryImage3 from "../../../assets/bgTerbaru.jpg";
+import GalleryImage4 from "../../../assets/bg-4.jpg";
 
 interface GalleryImage {
   id: string;
@@ -19,10 +21,12 @@ interface GallerySectionProps {
 
 const galleryData = {
   title: "Galeri",
-  description: "Dengan cicilan ringan dan DP Rp. 0, Anda bisa menghuni rumah tipe 36/72 yang berlokasi strategis di Jalan Poros Permandian Bissappu, Kabupaten Bantaeng.",
+  description: "anda bisa menghuni rumah satu satunya di Bantaeng dengan desain minimalis dan modern",
   images: [
     { id: 1, src: galleryImage1, alt: "Tampak depan perumahan" },
     { id: 2, src: galleryImage2, alt: "Gerbang utama perumahan" },
+    { id: 3, src: GalleryImage3, alt: "Tampak interior rumah" },
+    { id: 4, src: GalleryImage4, alt: "depan rumah" },
   ],
 };
 

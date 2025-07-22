@@ -46,18 +46,21 @@ const BookingForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={(e) => e.preventDefault()} className="max-w-md mx-auto">
-      <InputField label="Nama Lengkap" name="nama" value={formData.nama} onChange={handleChange} required />
-      <InputField label="Nomor WhatsApp" name="whatsapp" type="tel" value={formData.whatsapp} onChange={handleChange} required />
-      <InputField label="Pesan" name="pesan" value={formData.pesan} onChange={handleChange} textarea />
+    <>
+      <h2 className="text-center mb-5 text-2xl">Informasi lebih Lanjut Dan Konsultasi Gratis Via Whatsapp</h2>
+      <form onSubmit={(e) => e.preventDefault()} className="max-w-md mx-auto">
+        <InputField label="Nama Lengkap" name="nama" value={formData.nama} onChange={handleChange} required />
+        <InputField label="Nomor WhatsApp" name="whatsapp" type="tel" value={formData.whatsapp} onChange={handleChange} required />
+        <InputField label="Pesan" name="pesan" value={formData.pesan} onChange={handleChange} textarea />
 
-      {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
-      {success && <p className="text-green-500 text-sm mb-4">{success}</p>}
+        {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
+        {success && <p className="text-green-500 text-sm mb-4">{success}</p>}
 
-      <button type="submit" onClick={handleSubmit} className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg mt-2">
-        Kirim via WhatsApp
-      </button>
-    </form>
+        <button type="submit" onClick={handleSubmit} className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg mt-2">
+          Kirim via WhatsApp
+        </button>
+      </form>
+    </>
   );
 };
 

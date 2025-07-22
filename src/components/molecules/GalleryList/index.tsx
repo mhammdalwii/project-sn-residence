@@ -10,8 +10,11 @@ interface GalleryListProps {
 const GalletyList: React.FC<GalleryListProps> = ({ title, description }) => {
   return (
     <div className="flex flex-col items-center md:items-start">
-      <Gallery variant="h2">{title}</Gallery>
-      <Divider />
+      <Gallery variant="h2">
+        {title}
+        <Divider />
+      </Gallery>
+
       <Gallery variant="p" className="mt-6 text-center md:text-left">
         {description}
       </Gallery>
