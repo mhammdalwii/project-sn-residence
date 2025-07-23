@@ -2,11 +2,6 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, A11y } from "swiper/modules";
 
-// Impor CSS untuk Swiper
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
 // PERBAIKAN: Sesuaikan path impor dengan struktur Atomic Design kita
 import RequirementCard from "../../molecules/AlurPembelian/RequirementCard";
 import { type Item } from "../../atoms/Alur";
@@ -32,6 +27,60 @@ const adminRequirements: Item[] = [
   { text: "Pas Foto Suami & Istri (3x4, 2 lembar)" },
 ];
 const kprRequirements: Item[] = [{ text: "Memproses permohonan KPR subsidi" }, { text: "Melakukan wawancara dengan konsumen terkait penghasilan & kemampuan bayar" }, { text: "Memeriksa dokumen legalitas tanah dan rumah dari developer" }];
+
+const evaluasi: Item[] = [
+  {
+    text: "Melakukan appraisal atau penilaian harga rumah.",
+  },
+
+  {
+    text: "Mengecek kembali kemampuan finansial konsumen.",
+  },
+
+  {
+    text: "Menilai kelayakan rumah sesuai program subsidi pemerintah.",
+  },
+];
+
+const keputusan: Item[] = [
+  {
+    text: "Mengeluarkan keputusan: Disetujui atau Ditolak.",
+  },
+
+  {
+    text: "Jika disetujui, bank menerbitkan Surat Perjanjian Kredit (SPK).",
+  },
+
+  {
+    text: "Jika ditolak, bank akan memberi alasan & solusi (misalnya, melengkapi dokumen tambahan)",
+  },
+];
+
+const persiapan: Item[] = [
+  {
+    text: "Menyiapkan dana tambahan seperti uang muka (DP), biaya notaris, dan administrasi bank.",
+  },
+
+  {
+    text: "Menghadiri proses akad di bank atau notaris.",
+  },
+];
+
+const pencairan: Item[] = [
+  {
+    text: "Mencairkan dana KPR ke rekening developer setelah akad kredit selesai.",
+  },
+];
+
+const monitoring: Item[] = [
+  {
+    text: "Mengecek kondisi rumah sebelum serah terima.",
+  },
+
+  {
+    text: "Menandatangani Berita Acara Serah Terima (BAST).",
+  },
+];
 // ... (tambahkan konstanta data lainnya jika ada: evaluasi, keputusan, dll.)
 
 // 2. PERBAIKAN: Gabungkan semua data kartu ke dalam satu array
@@ -41,7 +90,11 @@ const cardData = [
   { id: 3, title: "Pengecekan BI Checking", subtitle: "Dilakukan oleh Bank", items: pengecekan },
   { id: 4, title: "Kelengkapan Berkas Administrasi", subtitle: "Dilakukan oleh Konsumen", items: adminRequirements, multiColumn: true },
   { id: 5, title: "Pengajuan KPR ke Bank", subtitle: "Dilakukan oleh Konsumen", items: kprRequirements },
-  // ... (tambahkan objek untuk kartu lainnya di sini)
+  { id: 6, title: "Evaluasi & Penilaian Kelayakan Kredit", subtitle: "Dilakukan oleh Bank", items: evaluasi },
+  { id: 7, title: "Keputusan Persetujuan KPR", subtitle: "Dilakukan oleh Bank", items: keputusan },
+  { id: 8, title: "Persiapan Akad Kredit", subtitle: "Dilakukan oleh Konsumen", items: persiapan },
+  { id: 9, title: "Pencairan Dana KPR", subtitle: "Dilakukan oleh Bank", items: pencairan },
+  { id: 10, title: "Monitoring & Serah Terima Unit", subtitle: "Dilakukan oleh Konsumen", items: monitoring },
 ];
 
 const RequirementsSection: React.FC = () => {
