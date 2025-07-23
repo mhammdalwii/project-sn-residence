@@ -9,7 +9,7 @@ interface RequirementListProps {
 
 const RequirementList: React.FC<RequirementListProps> = ({ items, multiColumn = false }) => {
   return (
-    <ul className={`space-y-2 ${multiColumn ? "md:columns-2 md:gap-x-8" : ""}`}>
+    <ul className={`space-y-2 ${multiColumn ? "md:columns-3 md:gap-x-8" : ""}`}>
       {items.map((item, index) => (
         <ListItem key={index} item={item} />
       ))}
