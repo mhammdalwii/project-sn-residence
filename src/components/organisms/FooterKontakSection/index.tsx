@@ -30,6 +30,14 @@ const Footer: React.FC = () => {
                 Jl. Pahlawan cabodo (samping alfamidi), Bantaeng
               </div>
             </div>
+            <div className="flex items-start gap-2">
+              <MapPin size={18} className="mt-1 text-orange-500" />
+              <div>
+                <span className="font-semibold">Lokasi SN 3</span>
+                <br />
+                Jl. Lkr. Barat, Bonto Atu, Kec. Bissappu, Kabupaten Bantaeng.
+              </div>
+            </div>
             <div className="flex items-center gap-2">
               <Mail size={18} className="text-orange-500" />
               <span>snresidence88@gmail.com</span>

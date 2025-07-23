@@ -21,7 +21,7 @@ const Typography: React.FC<TypographyProps> = ({ variant, children, className = 
 
   // Mendefinisikan style dasar untuk setiap varian
   const variantStyles: { [key in Variant]: string } = {
-    h2: "text-4xl font-bold text-gray-800",
+    h2: "text-3xl font-bold text-gray-800",
     p: "text-gray-600 leading-relaxed",
   };
 
