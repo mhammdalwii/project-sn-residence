@@ -130,8 +130,6 @@ const RequirementsSection: React.FC = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-
-        {/* 4. PERBAIKAN: Hapus seluruh div grid yang ada di sini */}
       </div>
     </section>
   );
