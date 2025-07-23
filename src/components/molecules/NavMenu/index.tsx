@@ -13,7 +13,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ onClick, isMobile }) => {
       <NavLink to="tentang" label="Tentang Kami" onClick={onClick} />
       <NavLink to="gallery" label="Gallery" onClick={onClick} />
       <NavLink to="kontak" label="Kontak" onClick={onClick} />
-      <Button href="https://wa.me/622190652805">Booking</Button>
+      <Button href="https://wa.me/6282190652805">Booking</Button>
     </div>
   );
 };

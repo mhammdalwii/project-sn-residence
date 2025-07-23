@@ -8,7 +8,7 @@ const HeroContent: React.FC = () => {
     <div className="text-center max-w-2xl w-full flex flex-col items-center space-y-6">
       <LogoSN />
       <Heading title="Properti Berkelas Untuk Semua Kelas" />
-      <Button className="mt-4" href="https://wa.me/622190652805">
+      <Button className="mt-4" href="https://wa.me/6282190652805">
         BOOKING SEKARANG
       </Button>
     </div>
