@@ -39,7 +39,7 @@ const BookingForm: React.FC = () => {
 
     const { nama, whatsapp, pesan } = formData;
     const message = `Hallo, saya ${nama} ingin booking unit di SN Residence.%0ANomor WA: ${whatsapp}%0APesan: ${pesan}`;
-    const whatsappUrl = `https://wa.me/6282292731183?text=${message}`;
+    const whatsappUrl = `https://wa.me/6282190652805?text=${message}`;
 
     setSuccess("Berhasil! Mengarahkan ke WhatsApp...");
     window.open(whatsappUrl, "_blank");
